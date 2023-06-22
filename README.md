@@ -1,15 +1,15 @@
 # TASK
 
+----------------
+- [x] 1. Use TypeScript to define the User type with the following properties: ID (string), rank (number), name (string), email (string), image (string), and friends (array of user IDs).
+- [x] 2. Fetch the users' data from an API endpoint when the component mounts. The API response should be an array of User objects.
+- [x] 3. Implement a function called formatUser that takes a User object as input. This function should fill in two additional properties: friendNames (an array of all friends' names) and highestRankingFriend (the ID of the friend with the highest rank). The friendNames array should contain the names of the users based on their IDs. Find the optimal place for this function so it's called as infrequently as possible. 
+- [x] 4. Create a user component called User that receives the following props: user (User object), onClick (function to be called when the user is clicked), and isSelected (boolean indicating if the user is selected).
+- [x] 5. Display the list of users on the users page using the User component. Show the user's name, email, and friend names in the component. When a user is clicked, update the selectedUser state variable to the ID of the clicked user.
+- [x] 6. Implement memoization for the User components to optimize performance. The components should only re-render when the user data is updated.
+- [x] 7. Implement searching functionality by name, ID, or friend's ID. Allow users to search for users by entering a query in an input field. Display only the users that match the search criteria. The search should be case-insensitive and match any part of the user's name, ID, or friend's ID.
 
-[x] 1. Use TypeScript to define the User type with the following properties: ID (string), rank (number), name (string), email (string), image (string), and friends (array of user IDs).
-[x] 2. Fetch the users' data from an API endpoint when the component mounts. The API response should be an array of User objects.
-[x] 3. Implement a function called formatUser that takes a User object as input. This function should fill in two additional properties: friendNames (an array of all friends' names) and highestRankingFriend (the ID of the friend with the highest rank). The friendNames array should contain the names of the users based on their IDs. Find the optimal place for this function so it's called as infrequently as possible. 
-[x] 4. Create a user component called User that receives the following props: user (User object), onClick (function to be called when the user is clicked), and isSelected (boolean indicating if the user is selected).
-[x] 5. Display the list of users on the users page using the User component. Show the user's name, email, and friend names in the component. When a user is clicked, update the selectedUser state variable to the ID of the clicked user.
-[x] 6. Implement memoization for the User components to optimize performance. The components should only re-render when the user data is updated.
-[x] 7. Implement searching functionality by name, ID, or friend's ID. Allow users to search for users by entering a query in an input field. Display only the users that match the search criteria. The search should be case-insensitive and match any part of the user's name, ID, or friend's ID.
-
-
+---------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
